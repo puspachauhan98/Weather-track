@@ -1,0 +1,69 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  font-size: 16px;
+  text-align: center;
+  flex-direction: column;
+  background-image: url('https://source.unsplash.com/1600x900/?weather,clouds');
+  background-size: cover;
+  background-position: center;
+}
+
+.displaydata {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 50%;
+  height: 50%;
+  /* Adjust height dynamically */
+  margin-top: 60px;
+  justify-content: center;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  /* Center align */
+  text-align: justify;
+}
+
+.data {
+  margin: 0 auto;
+  /* Center align */
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .displaydata {
+    width: 90%;
+    /* Adjust width for smaller screens */
+    padding: 20px;
+  }
+
+  .data {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .displaydata {
+    width: 100%;
+    /* Full width for very small screens */
+    padding: 15px;
+  }
+
+  .data {
+    font-size: 14px;
+    /* Smaller font size for better readability */
+  }
+}
